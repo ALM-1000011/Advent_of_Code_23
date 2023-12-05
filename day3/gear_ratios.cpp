@@ -54,7 +54,7 @@ int main() {
           for (int w = 0; w <= numero2.size(); w++) { // Recorre el número convertido a cadena
             if (numero_ind.second + w == i || numero_ind.second - w == i) { // Si el número está adyacente al símbolo actual
               sumatotal += numero_ind.first; // Agrega el número a la suma total
-              posible_partes.erase(posible_partes.begin() + j); // Elimina la parte del número del vector de posibles partes
+              posible_partes[j].second = 99; // Elimina la parte del número del vector de posibles partes
             }
           }
         }
