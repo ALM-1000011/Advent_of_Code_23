@@ -11,14 +11,19 @@
 #include <string>
 #include <vector>
 
+
+
 int main() {
   std::ifstream fichero("input.txt");
   std::string linea, numero;
   int resultado_final = 0;
+
   while (std::getline(fichero, linea)) {
     int resultado = 0;
     std::vector<int> cartas_ganadoras, mis_cartas;
     bool segunda_tanda = false, numero_carta = true;
+
+    // Leer los números ganadores y las cartas del jugador
     for (int i = 0; i <= linea.length(); i++) {
       if (isdigit(linea[i]) && !numero_carta) {
         numero += linea[i];
@@ -37,6 +42,8 @@ int main() {
         numero.clear();
       }
     }
+
+    // Calcular el resultado para la rifa actual
     for (int i = 0; i < cartas_ganadoras.size(); i++) {
       for (int j = 0; j < mis_cartas.size(); j++) {
         if (cartas_ganadoras[i] == mis_cartas[j]) {
@@ -48,8 +55,11 @@ int main() {
         }
       }
     }
+
     resultado_final += resultado;
   }
+
+  // Imprimir el resultado final
   std::cout << "Resultado: " << resultado_final << std::endl;
   fichero.close();
 }

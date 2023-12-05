@@ -12,11 +12,15 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <utility>
 
 int main() {
   std::ifstream fichero("input.txt");
   std::string linea, numero;
   int resultado_final = 0;
+  int numero_carta = 1;
+  std::vector<int> vec_copias_cartas;
+  vec_copias_cartas.push_back(0);
   while (std::getline(fichero, linea)) {
     int resultado = 0;
     std::vector<int> cartas_ganadoras, mis_cartas;
