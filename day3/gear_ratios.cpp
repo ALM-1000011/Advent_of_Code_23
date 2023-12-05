@@ -1,9 +1,9 @@
-// AOC 23 Día 2, segunda parte
+// AOC 23 Día 3, segunda parte
 // Descripción: Dado un fichero de texto en el que figura el esquema de un
 // sistema (serie de números y símbolos en cada línea) cualquier número
 // adayacente a un símbolo es "parte de un número" y se deberá añadir a la suma
 // total. ('. no es un símbolo) Copyrigth (C) 2023 A.L.M Ver:
-// https://adventofcode.com/2020/day/3 Versión: 1.00
+// https://adventofcode.com/2023/day/3 Versión: 1.00
 
 #include <fstream>
 #include <iostream>

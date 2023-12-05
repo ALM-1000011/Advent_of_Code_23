@@ -1,8 +1,10 @@
-// AOC 23 Día 4, primer parte
+// AOC 23 Día 4, segunda parte
 // Descripción: Dado un fichero de texto en el que se muestran distintas cartas,
 // cada carta contiene los números ganadores de una rifa separados de los
 // números que has obtenido en dicha rifa. Por cada número ganador que coincida
-// con el tuyo, obtienes un punto, muliplicandose por dos consecutivamente.
+// con el tuyo, obtienes una copia de las siguientes cartas por debajo de la estudiada.
+// P. ej: Si estudias la carta dos y obtienes 3 coincidencias, obtienes una copia de las cartas 3, 4 y 5.
+// El programa muestra la suma de todas las cartas que obtienes.
 // Copyrigth (C) 2023 A.L.M Ver:
 // https://adventofcode.com/2023/day/4 Versión: 1.00
 
